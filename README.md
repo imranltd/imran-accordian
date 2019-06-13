@@ -1,23 +1,23 @@
-#Accordian
+# Accordian
 by Imran Sarwar
 imran.007@gmail.com
 
 **Live Demo:** [http://www.imransarwar.co.uk/imran-accordian/](http://www.imransarwar.co.uk/imran-accordian/)
 
-##Steps to run the Application
+## Steps to run the Application
 1. Clone this repo
 2. Using your Terminal ```cd``` into ```imran-accordian``` folder
 3. Type ```yarn install``` or ```npm install```
 4. Type ```yarn start``` or ```npm run start```
 5. Open your browser and go to ```http://localhost:3000/``` url
 
-##Steps to run the Unit tests
+## Steps to run the Unit tests
 1. Run ```yarn test``` or ```npm run test```
 
 To see test coverage run ```yarn test --coverage``` or ```npm run test ---coverage```
 
-***
-#Standard Create React App README
+---
+# Standard Create React App README
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
