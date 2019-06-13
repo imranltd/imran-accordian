@@ -1,0 +1,384 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders correctly 1`] = `
+.c0 {
+  border-radius: 5px;
+  font-family: Arial,Helvetica,sans-serif;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.c1 {
+  -webkit-align-items: right;
+  -webkit-box-align: right;
+  -ms-flex-align: right;
+  align-items: right;
+  background-color: #23D2DA;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: #1375E6;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.c1:after {
+  content: "[+]";
+}
+
+.c2 {
+  border-color: black;
+  border-radius: 0 0 5px 5px;
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
+  display: none;
+  padding: 20px 10px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="headingClass c1"
+    id="id-1"
+    onClick={[Function]}
+  >
+    Q: 
+    This is a question
+  </div>
+  <div
+    className="detailClass c2"
+  >
+    This is an Answer
+  </div>
+</div>
+`;
+
+exports[`<App /> should match snapshot with data 1`] = `
+.c0 {
+  border-radius: 5px;
+  font-family: Arial,Helvetica,sans-serif;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.c1 {
+  -webkit-align-items: right;
+  -webkit-box-align: right;
+  -ms-flex-align: right;
+  align-items: right;
+  background-color: #23D2DA;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: #1375E6;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.c1:after {
+  content: "[+]";
+}
+
+.c2 {
+  border-color: black;
+  border-radius: 0 0 5px 5px;
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
+  display: none;
+  padding: 20px 10px;
+}
+
+<App
+  data={
+    Object {
+      "faqs": Array [
+        Object {
+          "answer": "This is an Answer",
+          "id": 1,
+          "question": "This is a question",
+        },
+      ],
+    }
+  }
+>
+  <Accordian
+    clickHandle={[Function]}
+    data={
+      Object {
+        "answer": "This is an Answer",
+        "id": 1,
+        "question": "This is a question",
+      }
+    }
+    details="This is an Answer"
+    heading="This is a question"
+    id="id-1"
+    isOpen={false}
+    key="id-1"
+    prefix="Q: "
+  >
+    <styled.div
+      isOpen={false}
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": true,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0;
+  padding: 10px;
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        isOpen={false}
+      >
+        <div
+          className="c0"
+        >
+          <styled.div
+            className="headingClass"
+            id="id-1"
+            isOpen={false}
+            onClick={[Function]}
+          >
+            <StyledComponent
+              className="headingClass"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bwzfXH",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  align-items: right;
+  background-color: #23D2DA;
+  border-radius: ",
+                      [Function],
+                      "
+  border: 1px solid black;
+  color: #1375E6;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+  &:after {
+    content: ",
+                      [Function],
+                      "
+  }
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bwzfXH",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              id="id-1"
+              isOpen={false}
+              onClick={[Function]}
+            >
+              <div
+                className="headingClass c1"
+                id="id-1"
+                onClick={[Function]}
+              >
+                Q: 
+                This is a question
+              </div>
+            </StyledComponent>
+          </styled.div>
+          <styled.div
+            className="detailClass"
+            isOpen={false}
+          >
+            <StyledComponent
+              className="detailClass"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htpNat",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
+  border-color: black;
+  border-radius: 0 0 5px 5px;
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
+  display: ",
+                      [Function],
+                      "
+  padding: 20px 10px;
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htpNat",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              isOpen={false}
+            >
+              <div
+                className="detailClass c2"
+              >
+                This is an Answer
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </Accordian>
+</App>
+`;
+
+exports[`<App /> should match snapshot with no data 1`] = `
+.c0 {
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+  height: 50px;
+  width: 50px;
+}
+
+.c0 .path {
+  -webkit-animation: dash 1.5s ease-in-out infinite;
+  animation: dash 1.5s ease-in-out infinite;
+  stroke-linecap: round;
+  stroke: red;
+}
+
+<App
+  data={Object {}}
+>
+  <Spinner>
+    <styled.svg
+      viewBox="0 0 50 50"
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bxivhb",
+              "isStatic": true,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  animation: rotate 2s linear infinite;
+  height: 50px;
+  width: 50px;
+
+  & .path {
+    animation: dash 1.5s ease-in-out infinite;
+    stroke-linecap: round;
+    stroke: red;
+  }
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes dash {
+    0% {
+      stroke-dasharray: 1, 150;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: -35;
+    }
+    100% {
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: -124;
+    }
+  }
+",
+              ],
+            },
+            "displayName": "styled.svg",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bxivhb",
+            "target": "svg",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        viewBox="0 0 50 50"
+      >
+        <svg
+          className="c0"
+          viewBox="0 0 50 50"
+        >
+          <circle
+            className="path"
+            cx="25"
+            cy="25"
+            fill="none"
+            r="20"
+            strokeWidth="4"
+          />
+        </svg>
+      </StyledComponent>
+    </styled.svg>
+  </Spinner>
+</App>
+`;
