@@ -4,6 +4,10 @@ imran.007@gmail.com
 
 **Live Demo:** [http://www.imransarwar.co.uk/imran-accordian/](http://www.imransarwar.co.uk/imran-accordian/)
 
+**NodeJS:** v10.12.0
+**NPM:**  v6.4.1
+**Yarn:** 1.12.3
+
 ## Steps to run the Application
 1. Clone this repo
 2. Using your Terminal ```cd``` into ```imran-accordian``` folder
@@ -14,7 +18,7 @@ imran.007@gmail.com
 ## Steps to run the Unit tests
 1. Run ```yarn test``` or ```npm run test```
 
-To see test coverage run ```yarn test --coverage``` or ```npm run test ---coverage```
+To see test coverage run ```yarn test --coverage --watchAll=false``` or ```npm run test ---coverage --watchAll=false```
 
 ---
 # Standard Create React App README

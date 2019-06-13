@@ -42,6 +42,7 @@
       "src/**/*.{js,jsx}",
       "!src/index.js"
     ],
+    "coverageReporters": ["text"],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ]
