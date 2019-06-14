@@ -37,11 +37,12 @@ const AccordianAnswer = styled.div`
 
 
 const Accordian = ({
-  id, heading, details, clickHandle, isOpen, prefix,
+  id, heading, details, clickHandle, isOpen, prefix, dataId,
 }) => (
   <AccordianWrapper isOpen={isOpen}>
     <AccordianQuestion
       id={id}
+      data-test-id={`${dataId}-question`}
       isOpen={isOpen}
       onClick={e => clickHandle(e, isOpen)}
       className="headingClass"
@@ -51,6 +52,7 @@ const Accordian = ({
     </AccordianQuestion>
     <AccordianAnswer
       isOpen={isOpen}
+      data-test-id={`${dataId}-answer`}
       className="detailClass"
     >
       {details}
@@ -65,11 +67,13 @@ Accordian.propTypes = {
   clickHandle: PropTypes.func.isRequired,
   isOpen: PropTypes.bool,
   prefix: PropTypes.string,
+  dataId: PropTypes.string,
 };
 
 Accordian.defaultProps = {
   isOpen: true,
   prefix: '',
+  dataId: 'test-id',
 };
 
 export default Accordian;
