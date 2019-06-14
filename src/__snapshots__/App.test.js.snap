@@ -47,6 +47,7 @@ exports[`<App /> renders correctly 1`] = `
 >
   <div
     className="headingClass c1"
+    data-test-id="accordion-0-question"
     id="id-1"
     onClick={[Function]}
   >
@@ -55,6 +56,7 @@ exports[`<App /> renders correctly 1`] = `
   </div>
   <div
     className="detailClass c2"
+    data-test-id="accordion-0-answer"
   >
     This is an Answer
   </div>
@@ -125,6 +127,7 @@ exports[`<App /> should match snapshot with data 1`] = `
         "question": "This is a question",
       }
     }
+    dataId="accordion-0"
     details="This is an Answer"
     heading="This is a question"
     id="id-1"
@@ -171,12 +174,14 @@ exports[`<App /> should match snapshot with data 1`] = `
         >
           <styled.div
             className="headingClass"
+            data-test-id="accordion-0-question"
             id="id-1"
             isOpen={false}
             onClick={[Function]}
           >
             <StyledComponent
               className="headingClass"
+              data-test-id="accordion-0-question"
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
@@ -224,6 +229,7 @@ exports[`<App /> should match snapshot with data 1`] = `
             >
               <div
                 className="headingClass c1"
+                data-test-id="accordion-0-question"
                 id="id-1"
                 onClick={[Function]}
               >
@@ -234,10 +240,12 @@ exports[`<App /> should match snapshot with data 1`] = `
           </styled.div>
           <styled.div
             className="detailClass"
+            data-test-id="accordion-0-answer"
             isOpen={false}
           >
             <StyledComponent
               className="detailClass"
+              data-test-id="accordion-0-answer"
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
@@ -274,6 +282,7 @@ exports[`<App /> should match snapshot with data 1`] = `
             >
               <div
                 className="detailClass c2"
+                data-test-id="accordion-0-answer"
               >
                 This is an Answer
               </div>

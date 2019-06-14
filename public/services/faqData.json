@@ -1,0 +1,21 @@
+{
+  "info": {
+    "responseCode": 200,
+    "responseMsg": "Success"
+  },
+  "faqs": [
+  {
+    "id":1,
+    "question":"Hello",
+    "answer":"World"
+  }, {
+    "id":3,
+    "question":"Foo",
+    "answer":"Bar"
+  }, {
+      "id":5,
+      "question":"Bar",
+      "answer":"Foo"
+    }
+  ]
+}

@@ -20,6 +20,9 @@ imran.007@gmail.com
 
 To see test coverage run ```yarn test --coverage --watchAll=false``` or ```npm run test ---coverage --watchAll=false```
 
+## Steps to run the Integration tests
+1. Run ```yarn cy:open``` or ```npm run cy:open```
+
 ---
 # Standard Create React App README
 

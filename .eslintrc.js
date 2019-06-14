@@ -8,6 +8,8 @@ module.exports = {
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
+    cy: true,
+    context: true,
   },
   parserOptions: {
     ecmaFeatures: {

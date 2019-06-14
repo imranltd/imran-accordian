@@ -5,7 +5,9 @@ import fetchData from './Api';
 import Accordian from './components/Accordian';
 import Spinner from './components/Spinner';
 
-const API_URL = 'https://api.myjson.com/bins/jw3rg';
+const API_URL = process.env.NODE_ENV === 'production'
+  ? process.env.REACT_APP_PRD_FAQ_API_URL
+  : process.env.REACT_APP_DEV_FAQ_API_URL;
 
 const App = ({ data }) => {
   const initialLoading = (!Object.keys(data).length);
@@ -35,10 +37,11 @@ const App = ({ data }) => {
   return (!loading && data)
     ? (
       <>
-        { accordianData.faqs.map(faq => (
+        { accordianData.faqs.map((faq, index) => (
           <Accordian
             key={`id-${faq.id}`}
             id={`id-${faq.id}`}
+            dataId={`accordion-${index}`}
             heading={faq.question}
             details={faq.answer}
             data={faq}
