@@ -4,7 +4,6 @@ context('Querying', () => {
   });
 
   it('question should be visible answer not visible', () => {
-
     cy.wait(1000);
 
     cy.get('[data-test-id="accordion-0-question"]').should('be.visible');

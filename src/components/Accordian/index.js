@@ -13,7 +13,7 @@ const AccordianWrapper = styled.div`
 const AccordianQuestion = styled.div`
   align-items: right;
   background-color: #23D2DA;
-  border-radius: ${({ isOpen }) => (isOpen ? '5px 5px 0 0;' : '5px;')}
+  border-radius: ${({ isOpen }) => (isOpen ? '5px 5px 0 0;' : '5px;')};
   border: 1px solid black;
   color: #1375E6;
   cursor: pointer;
