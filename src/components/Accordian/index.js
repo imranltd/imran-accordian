@@ -31,7 +31,7 @@ const AccordianAnswer = styled.div`
   border-radius: 0 0 5px 5px;
   border-style: solid;
   border-width: 0 1px 1px 1px;
-  display: ${({ isOpen }) => (isOpen ? 'block;' : 'none;')}
+  display: ${({ isOpen }) => (isOpen ? 'block;' : 'none;')};
   padding: 20px 10px;
 `;
 
