@@ -13,7 +13,7 @@ const AccordianWrapper = styled.div`
 const AccordianQuestion = styled.div`
   align-items: right;
   background-color: #23D2DA;
-  border-radius: ${({ isOpen }) => (isOpen ? '5px 5px 0 0;' : '5px;')}
+  border-radius: ${({ isOpen }) => (isOpen ? '5px 5px 0 0;' : '5px;')};
   border: 1px solid black;
   color: #1375E6;
   cursor: pointer;
@@ -31,17 +31,18 @@ const AccordianAnswer = styled.div`
   border-radius: 0 0 5px 5px;
   border-style: solid;
   border-width: 0 1px 1px 1px;
-  display: ${({ isOpen }) => (isOpen ? 'block;' : 'none;')}
+  display: ${({ isOpen }) => (isOpen ? 'block;' : 'none;')};
   padding: 20px 10px;
 `;
 
 
 const Accordian = ({
-  id, heading, details, clickHandle, isOpen, prefix,
+  id, heading, details, clickHandle, isOpen, prefix, dataId,
 }) => (
   <AccordianWrapper isOpen={isOpen}>
     <AccordianQuestion
       id={id}
+      data-test-id={`${dataId}-question`}
       isOpen={isOpen}
       onClick={e => clickHandle(e, isOpen)}
       className="headingClass"
@@ -51,6 +52,7 @@ const Accordian = ({
     </AccordianQuestion>
     <AccordianAnswer
       isOpen={isOpen}
+      data-test-id={`${dataId}-answer`}
       className="detailClass"
     >
       {details}
@@ -65,11 +67,13 @@ Accordian.propTypes = {
   clickHandle: PropTypes.func.isRequired,
   isOpen: PropTypes.bool,
   prefix: PropTypes.string,
+  dataId: PropTypes.string,
 };
 
 Accordian.defaultProps = {
   isOpen: true,
   prefix: '',
+  dataId: 'test-id',
 };
 
 export default Accordian;
